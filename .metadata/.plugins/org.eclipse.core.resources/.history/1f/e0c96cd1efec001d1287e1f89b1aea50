@@ -1,0 +1,13 @@
+package pe.edu.cibertec.CL1_BeltranLopez.model.bd;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "especialidad")
+public class Especialidad {
+
+}
