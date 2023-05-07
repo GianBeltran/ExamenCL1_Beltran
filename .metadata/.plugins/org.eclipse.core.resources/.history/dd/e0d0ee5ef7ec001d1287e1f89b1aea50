@@ -12,12 +12,12 @@ import lombok.Data;
 @Table(name = "especialidad")
 public class Especialidad {
 	@Id
-	@Column(name = "idesp")
-	private String idesp;
+	@Column(name = "IdEsp")
+	private String IdEsp;
 	
-	@Column(name = "nomesp")
-	private String nomesp;
+	@Column(name = "NomEsp")
+	private String NomEsp;
 	
-	@Column(name = "costo")
-	private Integer costo;
+	@Column(name = "Costo")
+	private Integer Costo;
 }

@@ -14,11 +14,11 @@
 			</div>
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{nomesp}">			  
+			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{descestado}">			  
 			</div>
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Costo</label>
-			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{costo}">			  
+			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{descestado}">			  
 			</div>
 			<div class="text-center">
 				<button type="submit" class="btn btn-primary">Guardar</button>

@@ -7,18 +7,18 @@
 	<div class="card">
 	  <div class="card-header">Registro de Estado</div>
 	  <div class="card-body">
-		  <form th:action="@{/Especialidad/frmRegEspecialidad}" method="post" th:object="${especialidadForm}">
+		  <form th:action="@{/Estado/frmRegEstado}" method="post" th:object="${estadoForm}">
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Id</label>
-			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{idesp}">			  
+			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{descestado}">			  
 			</div>
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{nomesp}">			  
+			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{descestado}">			  
 			</div>
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Costo</label>
-			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{costo}">			  
+			  <input type="text" class="form-control" id="exampleFormControlInput1" th:field="*{descestado}">			  
 			</div>
 			<div class="text-center">
 				<button type="submit" class="btn btn-primary">Guardar</button>

@@ -37,9 +37,7 @@ public class EspecialidadController {
 		} catch (Exception e) {
 			mensaje = "Especialidad no registrada";
 		}
-		model.addAttribute("especialidadForm" , new Especialidad());
-		model.addAttribute("visualizar", true);
-		model.addAttribute("respuesta", mensaje);
-		return "Especialidad/frmRegEspecialidad";
+		return = "Especialidad/frmRegEspecialidad";
 	}
+	
 }

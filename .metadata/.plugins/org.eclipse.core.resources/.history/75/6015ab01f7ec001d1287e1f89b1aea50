@@ -3,7 +3,6 @@
 <head th:insert="layout::head">
 </head>
 <body>
-	<nav th:insert="layout::menu"></nav>
 	<table class="table">
 	  <thead>
 	    <tr>
@@ -14,9 +13,9 @@
 	  </thead>
 	  <tbody>
 	    <tr th:each="especialidad :${listaEspecialidad}">
-	      <td th:text="${especialidad.idesp}"></td>
-	      <td th:text="${especialidad.nomesp}"></td>
-	      <td th:text="${especialidad.costo}"></td>
+	      <td th:text="${especialidad.IdEsp}"></td>
+	      <td th:text="${especialidad.NomEsp}"></td>
+	      <td th:text="${especialidad.Costo}"></td>
 	    </tr>    
 	  </tbody>
 	</table>

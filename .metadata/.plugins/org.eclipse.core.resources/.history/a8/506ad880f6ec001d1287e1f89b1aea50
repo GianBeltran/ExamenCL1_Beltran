@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -30,16 +29,6 @@ public class EspecialidadController {
 		return "Especialidad/frmRegEspecialidad";
 	}
 	@PostMapping("/frmRegEspecialidad")
-	public String registarEspecialidad(@ModelAttribute("especialidadForm") Especialidad especialidad, Model model) {
-		String mensaje = "Especialidad registrado correctamente";
-		try {
-			especialidadService.registrarEspecialidad(especialidad);
-		} catch (Exception e) {
-			mensaje = "Especialidad no registrada";
-		}
-		model.addAttribute("especialidadForm" , new Especialidad());
-		model.addAttribute("visualizar", true);
-		model.addAttribute("respuesta", mensaje);
-		return "Especialidad/frmRegEspecialidad";
-	}
+	
+	
 }
